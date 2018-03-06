@@ -3,7 +3,7 @@
                     password_confirmation: "asdfasdf",
                     first_name: "Jon",
                     last_name: "Snow",
-                    phone: "16789169634")
+                    phone: "6789169634")
 
 puts "1 User created"
 
@@ -12,10 +12,9 @@ AdminUser.create(email: "admin@test.com",
                   password_confirmation: "asdfasdf",
                   first_name: "Admin",
                   last_name: "Name",
-                  phone: "16789169634")
+                  phone: "6789169634")
 
 puts "1 Admin User created"
-
 
 100.times do |post|
   Post.create!(date: Date.today,
@@ -31,3 +30,5 @@ puts "100 Posts have been created"
 end
 
 puts "100 audit logs have been created"
+
+
