@@ -24,6 +24,7 @@ describe 'Homepage' do
 
     click_on("confirm_#{audit_log.id}")
 
+
     expect(audit_log.reload.status).to eq('confirmed')
   end
 end
