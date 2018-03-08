@@ -6,7 +6,7 @@ class AuditLogPolicy < ApplicationPolicy
   def confirm?
     record.user_id == user.id
   end
-
+  
   private
 
     def admin?
